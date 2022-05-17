@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="last_cloudiaDataSet2" targetNamespace="http://tempuri.org/last_cloudiaDataSet2.xsd" xmlns:mstns="http://tempuri.org/last_cloudiaDataSet2.xsd" xmlns="http://tempuri.org/last_cloudiaDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="last_cloudiaDetails" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="last_cloudiaDetails (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Last_Cloudia.Properties.Settings.GlobalReference.Default.last_cloudiaDetails" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_personnagecompTableAdapter" GeneratorDataComponentClassName="v_personnagecompTableAdapter" Name="v_personnagecomp" UserDataComponentName="v_personnagecompTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="last_cloudiaDetails (Settings)" DbObjectName="`last cloudia`.v_personnagecomp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `nomPerso`, `nomCompetence` FROM `last cloudia`.`v_personnagecomp`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nomPerso" DataSetColumn="nomPerso" />
+              <Mapping SourceColumn="nomCompetence" DataSetColumn="nomCompetence" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="last_cloudiaDetails (Settings)" DbObjectName="`last cloudia`.v_personnagecomp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nomCompetence, nomPerso
+FROM     v_personnagecomp
+WHERE  (nomPerso = 'Kyle the Swordsman')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="last_cloudiaDetails (Settings)" DbObjectName="`last cloudia`.v_personnagecomp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nomCompetence, nomPerso
+FROM     v_personnagecomp
+WHERE  (nomPerso = 'Kyle the Swordsman')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="last_cloudiaDetails (Settings)" DbObjectName="`last cloudia`.v_personnagecomp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nomPerso, nomCompetence
+FROM     v_personnagecomp
+WHERE  (nomPerso = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="nomPerso" DataSourceName="`last cloudia`.v_personnagecomp" DataTypeServer="varchar(50)(50)" DbType="String" Direction="Input" ParameterName="@Param1" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="nomPerso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="last_cloudiaDetails (Settings)" DbObjectName="`last cloudia`.v_personnagecomp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="select" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="select" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="select">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nomPerso, nomCompetence
+FROM     v_personnagecomp
+WHERE  (nomPerso = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="nomPerso" DataSourceName="`last cloudia`.v_personnagecomp" DataTypeServer="varchar(50)(50)" DbType="String" Direction="Input" ParameterName="@Param1" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="nomPerso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="last_cloudiaDetails (Settings)" DbObjectName="`last cloudia`.v_personnagecomp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Test" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Test" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="Test">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nomPerso, nomCompetence
+FROM     v_personnagecomp
+WHERE  ('nomPerso' = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@Param1" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="last_cloudiaDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="last_cloudiaDataSet2" msprop:Generator_UserDSName="last_cloudiaDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_personnagecomp" msprop:Generator_TableClassName="v_personnagecompDataTable" msprop:Generator_TableVarName="tablev_personnagecomp" msprop:Generator_RowChangedName="v_personnagecompRowChanged" msprop:Generator_TablePropName="v_personnagecomp" msprop:Generator_RowDeletingName="v_personnagecompRowDeleting" msprop:Generator_RowChangingName="v_personnagecompRowChanging" msprop:Generator_RowEvHandlerName="v_personnagecompRowChangeEventHandler" msprop:Generator_RowDeletedName="v_personnagecompRowDeleted" msprop:Generator_RowClassName="v_personnagecompRow" msprop:Generator_UserTableName="v_personnagecomp" msprop:Generator_RowEvArgName="v_personnagecompRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomPerso" msprop:Generator_ColumnVarNameInTable="columnnomPerso" msprop:Generator_ColumnPropNameInRow="nomPerso" msprop:Generator_ColumnPropNameInTable="nomPersoColumn" msprop:Generator_UserColumnName="nomPerso">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nomCompetence" msprop:Generator_ColumnVarNameInTable="columnnomCompetence" msprop:Generator_ColumnPropNameInRow="nomCompetence" msprop:Generator_ColumnPropNameInTable="nomCompetenceColumn" msprop:Generator_UserColumnName="nomCompetence">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
